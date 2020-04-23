@@ -10,5 +10,7 @@ This contains the following files:
 A table of acknowledgements for the GISAID genome sequences used to develop this paper:
 https://raw.githubusercontent.com/hCoV-2019/lineages/master/gisaid_acknowledgements.tsv
 
+<img src="https://github.com/hCoV-2019/pangolin/blob/master/docs/logo.png" width="100">**P**hylogenetic **A**ssignment of **N**amed **G**lobal **O**utbreak **LIN**eages
+
 Software to help assign your own SARS-CoV-2 genomes to these lineages is available:
 http://github.com/hCoV-2019/pangolin
