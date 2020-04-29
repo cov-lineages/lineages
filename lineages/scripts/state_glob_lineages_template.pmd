@@ -1,0 +1,149 @@
+
+```python, echo=False, name='define_paths'
+
+#default is current working directory
+#this will come in here and also in the pweave call
+
+name_stem="state_global_lineages" 
+
+metadata = "" ##CHANGE
+
+fd = "figures/"
+
+```
+```python, echo=False,name='import_dependencies'
+import matplotlib.pyplot as plt
+from collections import defaultdict
+from collections import Counter
+import pandas as pd
+import os
+from tabulate import tabulate
+import imp
+
+import matplotlib as mpl
+import matplotlib.font_manager as font_manager
+
+font_list = font_manager.fontManager.addfont('utils/helveticaneue/HelveticaNeue.ttf')
+#font_list = font_manager.fontManager.addfont('utils/helveticaneue/HelveticaNeueBD.ttf')
+
+mpl.rcParams['font.family'] = 'helveticaneue'
+mpl.rcParams['font.weight']=1000
+mpl.rcParams['axes.labelweight']=300
+mpl.rcParams['font.size']=20
+
+plt.rcParams.update({'figure.max_open_warning': 0})
+
+time = imp.load_source('time_functions', 'utils/time_functions.py')
+parse = imp.load_source('parse_data', 'utils/parse_data.py')
+
+try:
+    os.mkdir("summary_files")
+except FileExistsError:
+    pass
+
+```
+
+**A dynamic nomenclature proposal for SARS-CoV-2 to assist genomic epidemiology**
+Andrew Rambaut, Edward C. Holmes, Verity Hill, Áine O’Toole, JT McCrone, Chris Ruis, Louis du Plessis, Oliver G. Pybus
+
+This is a companion repository to the paper describing a dynamic lineage nomenclature system for SARS-CoV-2.
+
+A pre-print of the paper can be found here: https://doi.org/10.1101/2020.04.17.046086
+
+This contains the following files:
+
+A table of acknowledgements for the GISAID genome sequences used to develop this paper:
+https://raw.githubusercontent.com/hCoV-2019/lineages/master/gisaid_acknowledgements.tsv
+
+<img src="https://github.com/hCoV-2019/pangolin/blob/master/docs/logo.png" width="100">**P**hylogenetic **A**ssignment of **N**amed **G**lobal **O**utbreak **LIN**eages
+
+Software to help assign your own SARS-CoV-2 genomes to these lineages is available:
+http://github.com/hCoV-2019/pangolin
+
+## Summary of lineages 
+
+```python, name='prepping things and prelim info',echo=False, results='tex'
+
+lin_obj_dict, taxa, most_recent_sample = parse.make_objects(metadata)
+week = most_recent_sample
+
+print("This report gives summaries of globally circulating lineages as of " + str(week) + ". ") 
+
+print(str(len(taxa)) + " sequences have been included in this analysis.")
+print(str(len(lin_obj_dict)) + " lineages have been assigned in this dataset.")
+
+```
+Sequences which were replicates or too error-prone were removed from this analysis.
+
+```python, echo=False, name='status description', results='tex'
+
+status_counts, reactivated_lineages, continuining_lineages = parse.describe_lineages(lin_obj_dict.values())
+
+reactivateds = status_counts["Reactivated"]
+actives = status_counts["Reactivated"] + status_counts["Continuing"]
+continuous = status_counts["Continuing"]
+pendings = status_counts["Pending extinction"]
+extincts = status_counts["Extinct"]
+quiets = status_counts["Gone quiet"]
+
+if pendings > 0:
+    if pendings == 1:
+        print(str(pendings) + "is pending extinction ie last seen three weeks ago.")
+    else:
+        print(str(pendings) + " are pending extinction ie last seen three weeks ago.")
+
+
+if extincts > 0:
+    print(str(extincts) + " have not been seen for more than one month, and so are viewed as extinct, but will continue to be monitored.")
+
+if quiets>0:
+    if quiets == 1:
+        print(str(quiets) + " has gone quiet, ie haven't been seen this week.")
+    else:
+        print(str(quiets) + " lineages have gone quiet, ie haven't been seen this week.")
+
+if reactivateds > 0:
+    if reactivateds == 1:
+        print(str(reactivateds) + " has reactivated.")
+    else:
+        print(str(reactivateds) + " lineages have reactivated.")
+
+if continuous > 0:
+    
+    if continuous == 1:
+        print(str(continuous) + " lineage has been continuously circulating.")
+    else:
+        print(str(continuous) + " lineages have been continuously circulating.")
+```
+
+Note that the status of a lineage is highly likely to be due to heterogeneity in sampling, and not necessarily indicative of real decline of lineages.
+
+The table below shows summary information of each lineage. 
+
+The "most common countries" column shows the three countries with the most sequences from each lineage, and the percentages by the country represent the percentage of sequences in that lineage taken from that location.
+
+Again, please interpret this with caution. Some countries are sequencing much more than others, and so locations of lineages may be at least partially due to this. It does not imply direction of transmission from one country to another. 
+Sometimes we have been able to examine lineages which we know are circulating in one country by looking at sequences from another country due to associated epidemiological information.
+
+```python, echo=False, name="table", results='tex'
+
+df = parse.make_dataframe(lin_obj_dict)
+df.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
+
+print(df.to_markdown())
+
+df.to_csv("summary_files/lineage_summary.tsv", sep="\t")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
