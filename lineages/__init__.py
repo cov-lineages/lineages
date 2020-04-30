@@ -1,2 +1,2 @@
 _program = "lineages"
-__version__ = "release_2020-04-27"
+__version__ = "2020-04-27"
