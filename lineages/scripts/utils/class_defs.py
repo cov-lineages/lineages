@@ -83,8 +83,8 @@ class lineage():
             self.mrd = max(self.dates)
             self.oldest = min(self.dates)
             
-            self.pretty_mrd = self.mrd.strftime('%b-%d')
-            self.pretty_oldest = self.oldest.strftime('%b-%d')
+            self.pretty_mrd = self.mrd.strftime('%B %d')
+            self.pretty_oldest = self.oldest.strftime('%B %d')
 
             self.length = (self.mrd - self.oldest).days
             

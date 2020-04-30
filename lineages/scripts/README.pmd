@@ -6,7 +6,7 @@
 
 name_stem="state_global_lineages" 
 
-metadata = "" ##CHANGE
+metadata = "../data/lineages.2020-04-27.csv"
 
 fd = "figures/"
 
