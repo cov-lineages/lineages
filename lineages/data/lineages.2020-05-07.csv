@@ -1,4 +1,4 @@
-name,country,travel_history,sample_date,epiweek,lineage,representative
+name,country,travel history,sample date,epiweek,lineage,representative
 USA/NY_2929/2020,USA,,2020-03-02,10.0,B.1,1
 USA/WA-S89/2020,USA,,2020-02-29,9.0,A.1,1
 USA/NH_0008/2020,USA,,2020-03-02,10.0,B.1,1
