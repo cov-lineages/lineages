@@ -134,7 +134,10 @@ A couple of key bits of information about specific lineages that are not necessa
 ```python, echo=False, name="table", results='tex'
 
 df = parse.make_dataframe(lin_obj_dict)
-df.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
+
+df.sort_values(by=["Lineage name"], ascending=True, inplace=True)
+df.set_index("Lineage name", inplace=True)
+#df.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
 
 print(df.to_markdown())
 

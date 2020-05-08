@@ -147,11 +147,6 @@ def make_dataframe(lin_obj_dict):
 
     dataframe["Known Travel"] = new_travels
 
-    dataframe.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
-
-    dataframe.set_index("Lineage name", inplace=True)
-
-
     return dataframe
 
 
