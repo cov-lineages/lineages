@@ -1,53 +1,82 @@
 Lineage name	Most common countries	Date range	Number of taxa	Days since last sampling	Known Travel
-B.1	UK (30%), USA (22%), Australia (10%)	January 24 to April 16	4276	1	Egypt;United_Arab_Emirates to Taiwan (1)<br/> Italy to Brazil, Nigeria, New_Zealand, Czech_Republic, Iceland, Mexico, Finland, Chile (50)<br/> Finland to Iceland (1)<br/> UK to Iceland, Kuwait (18)<br/> Iran to Finland (1)<br/> Netherlands to Iceland (3)<br/> Spain to Iceland, Taiwan (7)<br/> Germany to Iceland (3)<br/> Switzerland to Iceland (2)<br/> Austria to Iceland, Taiwan (46)<br/> Faroe_Islands to Iceland (1)<br/> USA to Iceland, Taiwan, Kuwait, Brazil (5)<br/> Denmark to Iceland (1)<br/> France to Iceland, Taiwan (3)<br/> Germany;Austria;Spain;Italy to Brazil (1)<br/> Egypt to Taiwan (2)<br/> USA;Czech_Republic to Taiwan (1)<br/> Czech_Republic to Taiwan (1)<br/> Poland to Taiwan (1)<br/>
-B	UK (22%), China (22%), Netherlands (14%)	December 24 to April 08	874	9	China to France, Cambodia, Italy, Canada, Thailand, Taiwan, Singapore, India (10)<br/> UK to Iceland (3)<br/> Netherlands to Iceland, Ecuador (2)<br/> USA to Iceland, China (2)<br/> Switzerland to Iceland (1)<br/> Italy to Iceland (1)<br/> Japan to Taiwan (1)<br/>
-A.1	USA (81%), Australia (12%), Canada (5%)	February 24 to April 04	616	13	USA to Iceland (1)<br/>
-B.2.1	UK (86%), Australia (8%), USA (2%)	February 09 to April 03	606	14	UK to Iceland (1)<br/>
-B.2	UK (43%), Iceland (18%), Netherlands (11%)	February 18 to April 06	437	11	Germany to Iceland (1)<br/> UK to Iceland, China (3)<br/> Switzerland to Iceland (1)<br/> Italy to Brazil (1)<br/>
-B.3	UK (78%), Germany (5%), Australia (4%)	February 23 to April 07	359	10	UK to Brazil, Iceland (2)<br/> Austria to Iceland (1)<br/>
-B.1.5	UK (35%), Spain (19%), Australia (15%)	February 27 to April 06	238	11	Spain to Iceland (2)<br/> Croatia to Iceland (1)<br/> Switzerland to Iceland (3)<br/> Portugal to Taiwan (1)<br/>
-A	China (57%), South_Korea (11%), USA (8%)	January 05 to March 29	191	19	China to Belgium, Australia, Vietnam, Taiwan, India (6)<br/> USA to New_Zealand (1)<br/>
-B.1.21	USA (99%), Iceland (1%)	March 08 to April 01	166	16	Denmark to Iceland (1)<br/>
-A.2	Australia (43%), Spain (34%), UK (10%)	February 25 to April 06	165	11	Spain to Brazil (1)<br/> Italy to Chile, Spain (2)<br/>
-B.1.11	UK (91%), Australia (4%), USA (4%)	March 07 to April 05	160	12	France to Iceland (1)<br/> UK to Iceland (1)<br/>
-B.1.1	UK (83%), Iceland (6%), Australia (4%)	March 02 to April 01	147	16	Austria to Iceland (5)<br/> UK to Iceland (2)<br/>
-B.4	Australia (45%), Canada (12%), India (9%)	January 18 to April 06	145	11	Iran to Pakistan, New_Zealand, Canada, Australia, Kuwait, Germany (8)<br/> Turkey to Taiwan (1)<br/>
-B.1.3	USA (92%), Australia (4%), Canada (1%)	March 10 to April 07	136	10	
-B.1.2	USA (97%), Canada (2%), Australia (1%)	March 09 to April 06	101	11	
-B.1.5.1	Iceland (100%)	March 12 to March 28	92	20	Argentina to Iceland (1)<br/>
-B.8	UK (89%), Iceland (9%), Portugal (1%)	March 03 to March 31	90	17	UK to Iceland (1)<br/> Austria to Iceland (1)<br/>
-A.3	USA (47%), Australia (47%), UK (4%)	January 28 to April 13	77	4	USA to Taiwan, New_Zealand (2)<br/>
-B.1.13	UK (89%), Australia (11%)	March 09 to April 02	75	15	
-B.1.7	UK (84%), Australia (11%), Iceland (4%)	February 22 to April 01	75	16	Spain to Iceland (1)<br/> UK to Iceland (2)<br/>
-B.2.2	UK (62%), Australia (15%), Iceland (8%)	February 25 to April 03	72	14	Spain to Iceland (1)<br/> Switzerland to Iceland (1)<br/> Ireland to Taiwan (1)<br/>
-B.1.8	Netherlands (75%), Iceland (14%), Australia (4%)	March 04 to April 02	71	15	Austria to Iceland (10)<br/>
-B.6	Australia (65%), India (7%), Singapore (5%)	March 04 to April 14	55	3	Philippines to Taiwan (1)<br/>
-B.2.4	UK (55%), Australia (43%), New_Zealand (2%)	March 11 to April 06	49	11	
-B.1.23	Australia (100%)	March 18 to April 08	45	9	
-B.2.5	UK (70%), Australia (22%), Slovenia (3%)	February 27 to April 01	37	16	
-A.5	Spain (22%), UK (19%), Uruguay (19%)	February 23 to April 17	36	0	
-B.1.9	Belgium (67%), Netherlands (21%), Turkey (6%)	March 14 to April 17	33	0	
-B.1.10	UK (69%), Iceland (16%), Australia (3%)	March 06 to April 01	32	16	UK to Iceland (1)<br/> USA to Iceland (1)<br/>
-B.1.19	USA (97%), Luxembourg (3%)	March 08 to April 13	31	4	
-B.7	Hong_Kong (97%), Canada (3%)	January 30 to March 04	31	44	
-B.1.14	Iceland (100%)	March 06 to March 28	29	20	Italy to Iceland (1)<br/>
-B.1.12	Belgium (54%), Luxembourg (46%)	March 04 to April 08	28	9	
-B.1.22	Netherlands (74%), Australia (22%), Portugal (4%)	March 09 to April 04	23	13	
-B.1.24	UK (100%)	March 20 to March 30	23	18	
-A.4	USA (100%)	March 13 to April 10	23	7	
-B.1.20	UK (95%), Iceland (5%)	February 26 to April 02	20	15	UK to Iceland (1)<br/>
-B.5	Japan (85%), USA (10%), Australia (5%)	February 10 to February 24	20	53	
-B.1.6	Belgium (74%), DRC (21%), Australia (5%)	March 11 to April 07	19	10	
-B.1.16	Belgium (100%)	March 01 to March 20	18	28	Italy to Belgium (1)<br/>
-B.1.28	USA (100%)	March 14 to April 01	16	16	
-B.1.26	USA (93%), Australia (7%)	March 12 to April 06	15	11	
-B.1.27	USA (100%)	March 11 to April 04	15	13	
-A.1.2	Canada (67%), USA (20%), Australia (13%)	March 07 to March 21	15	27	
-B.1.30	UK (100%)	March 17 to April 01	14	16	
-B.1.29	USA (93%), Australia (7%)	March 15 to April 06	14	11	
-A.1.1	Iceland (100%)	March 11 to March 20	14	28	USA to Iceland (10)<br/>
-B.1.25	Australia (100%)	March 19 to March 25	13	23	
-B.1.5.2	Netherlands (100%)	March 24 to April 02	12	15	
-B.1.31	Australia (100%)	March 21 to March 27	10	21	
-B.1.5.3	UK (88%), Australia (12%)	March 18 to April 01	8	16	
-B.2.3	Belgium (88%), Netherlands (12%)	March 07 to March 31	8	17	
+B.1	UK (42%), USA (18%), Australia (7%)	January 24 to April 23	6733	0	Egypt;United_Arab_Emirates to Taiwan (1)<br/> Italy to Brazil, Czech_Republic, Iceland, Chile, Nigeria, New_Zealand, Thailand, Mexico, Finland (51)<br/> Finland to Iceland (1)<br/> UK to Iceland, Kuwait (19)<br/> Iran to Finland (1)<br/> Netherlands to Iceland (3)<br/> Spain to Iceland, Taiwan (8)<br/> Germany to Iceland (3)<br/> Switzerland to Iceland (2)<br/> Austria to Iceland, Taiwan (46)<br/> USA to Taiwan, Costa_Rica, Iceland, Brazil (4)<br/> France to Turkey, Iceland, Taiwan, Argentina (5)<br/> Germany;Austria;Spain;Italy to Brazil (1)<br/> Egypt to Taiwan (2)<br/> USA;Czech_Republic to Taiwan (1)<br/> Czech_Republic to Taiwan (1)<br/> Poland to Taiwan (1)<br/> Mexico to Argentina (1)<br/>
+B	UK (26%), China (22%), USA (14%)	December 24 to April 23	1016	0	China to France, Canada, India, Italy, Thailand, Cambodia, Singapore, Taiwan (9)<br/> Italy to Iceland, Finland (2)<br/> UK to Iceland (3)<br/> Netherlands to Ecuador, Iceland (2)<br/> USA to Iceland, China, Kuwait (3)<br/> Switzerland to Iceland (2)<br/> Japan to Taiwan (1)<br/>
+A.1	USA (88%), Australia (9%), Canada (2%)	February 22 to April 09	981	14	USA to Iceland (1)<br/>
+B.2.1	UK (90%), Australia (6%), USA (1%)	February 07 to April 22	919	1	UK to Iceland (1)<br/>
+B.2	UK (53%), Iceland (13%), USA (10%)	February 13 to April 23	565	0	Germany to Iceland (1)<br/> UK to Iceland, China (3)<br/> Italy to Brazil (1)<br/>
+B.3	UK (78%), Denmark (4%), Australia (3%)	February 02 to April 19	469	4	UK to Iceland, Brazil (2)<br/> Austria to Iceland (1)<br/>
+B.1.5	UK (53%), Spain (13%), Australia (9%)	February 26 to April 23	424	0	Spain to Iceland, Argentina (3)<br/> Croatia to Iceland (1)<br/> Switzerland to Iceland (3)<br/> Portugal to Taiwan (1)<br/> Israel to Argentina (1)<br/> Brazil to Argentina (1)<br/> Saudia_Arabia to Turkey (1)<br/>
+B.1.1	UK (87%), Iceland (3%), Russia (2%)	February 07 to April 22	329	1	Austria to Iceland (5)<br/> UK to Iceland, Argentina (3)<br/> Argentina;Peru to Costa_Rica (1)<br/>
+B.1.11	UK (94%), USA (2%), Australia (2%)	March 02 to April 23	314	0	France to Iceland (1)<br/> UK to Iceland (1)<br/>
+B.1.21	USA (100%)	March 08 to April 08	242	15	
+A	China (52%), South_Korea (9%), USA (8%)	January 05 to April 06	241	17	China to Australia, India, Belgium, Taiwan, Vietnam (6)<br/> USA to New_Zealand (1)<br/> Saudia_Arabia to Turkey (1)<br/>
+B.4	Australia (42%), UK (17%), Canada (8%)	January 18 to April 14	206	9	Iran to Australia, Canada, New_Zealand, Kuwait, Pakistan, Germany (8)<br/> Turkey to Taiwan (1)<br/>
+A.2	Australia (45%), Spain (34%), UK (8%)	February 26 to April 13	180	10	Spain to Brazil (1)<br/> Italy to Chile, Spain (2)<br/>
+B.1.3	USA (91%), Australia (2%), Argentina (2%)	March 10 to April 18	173	5	
+B.1.2	USA (92%), Australia (6%), Canada (1%)	March 09 to April 14	145	9	
+B.2.2	UK (77%), Australia (9%), Iceland (5%)	February 25 to April 13	128	10	Spain to Iceland (1)<br/> Switzerland to Iceland (1)<br/> Ireland to Taiwan (1)<br/>
+B.8	UK (92%), Iceland (7%), Portugal (1%)	March 01 to April 11	123	12	UK to Iceland (1)<br/> Austria to Iceland (1)<br/>
+B.1.13	UK (89%), Australia (10%), Poland (1%)	March 09 to April 17	111	6	
+B.6	Australia (43%), Singapore (24%), USA (5%)	March 04 to April 15	94	8	Philippines to Taiwan (1)<br/>
+B.1.5.1	Iceland (100%)	March 12 to March 28	92	26	Argentina to Iceland (1)<br/>
+B.2.5	UK (83%), Australia (13%), Slovenia (1%)	February 27 to April 19	84	4	
+A.3	USA (50%), Australia (48%), Taiwan (1%)	March 03 to April 13	84	10	USA to New_Zealand, Taiwan (2)<br/>
+B.1.8	Netherlands (70%), Iceland (13%), Australia (4%)	March 04 to April 03	76	20	Austria to Iceland (10)<br/>
+B.1.23	Australia (100%)	March 18 to April 12	73	11	
+B.1.43	USA (93%), Australia (7%)	March 07 to April 02	70	21	
+B.1.10	UK (80%), Iceland (8%), Australia (5%)	March 06 to April 18	65	5	UK to Iceland (1)<br/> USA to Iceland (1)<br/> Saudia_Arabia to Turkey (1)<br/>
+A.5	UK (33%), Spain (27%), Uruguay (12%)	February 23 to April 19	60	4	
+B.1.35	UK (100%)	March 07 to April 12	55	11	
+B.1.42	Denmark (80%), Iceland (10%), Sweden (10%)	March 03 to April 02	50	21	Faroe_Islands to Iceland (1)<br/> Denmark to Iceland (2)<br/> UK to Iceland (1)<br/>
+B.1.24	UK (100%)	March 10 to April 12	50	11	
+B.1.56	UK (89%), Iceland (6%), Australia (4%)	March 07 to April 19	47	4	USA to Iceland (1)<br/>
+B.1.12	Luxembourg (58%), Belgium (39%), Switzerland (3%)	March 04 to April 13	38	10	
+B.1.9	Belgium (63%), Netherlands (20%), Turkey (9%)	March 14 to April 17	35	6	
+B.1.53	UK (88%), USA (6%), France (3%)	March 11 to April 18	34	5	
+B.1.19	USA (91%), Luxembourg (9%)	March 08 to April 17	34	6	
+B.2.6	UK (67%), Australia (12%), Iceland (9%)	March 05 to April 15	33	8	
+B.1.36	Turkey (41%), Finland (22%), UK (19%)	March 10 to April 01	32	22	Saudia_Arabia to Turkey (6)<br/>
+B.7	Hong_Kong (97%), Canada (3%)	January 30 to March 04	31	50	
+B.1.41	USA (100%)	March 19 to April 09	31	14	
+B.1.20	UK (90%), Netherlands (7%), Iceland (3%)	March 01 to April 15	29	8	UK to Iceland (1)<br/>
+B.10	UK (100%)	March 16 to April 22	29	1	
+B.1.22	Netherlands (61%), Australia (32%), Portugal (4%)	March 09 to April 10	28	13	
+B.1.5.6	UK (96%), Netherlands (4%)	March 15 to April 23	26	0	
+B.1.52	UK (100%)	March 31 to April 15	25	8	
+B.1.39	Denmark (96%), Australia (4%)	March 13 to March 28	25	26	
+A.4	USA (100%)	March 13 to April 10	24	13	
+B.2.4	Australia (83%), UK (12%), Uruguay (4%)	March 11 to April 02	24	21	
+B.1.26	USA (96%), Australia (4%)	March 12 to April 13	24	10	
+B.1.37	USA (100%)	March 12 to April 04	23	19	
+B.1.54	UK (50%), Iceland (23%), Belgium (23%)	March 16 to April 07	22	16	
+B.1.30	UK (100%)	March 18 to April 19	20	4	
+B.1.6	Belgium (75%), DRC (20%), Australia (5%)	March 11 to April 13	20	10	
+B.1.44	UK (100%)	February 20 to April 12	19	11	
+B.1.34	UK (100%)	March 17 to April 23	19	0	
+B.1.16	Belgium (100%)	March 01 to March 20	19	34	Italy to Belgium (1)<br/>
+B.1.29	USA (95%), Australia (5%)	March 15 to April 16	19	7	
+B.5	Japan (94%), Australia (6%)	February 10 to February 24	18	59	
+B.1.33	Australia (100%)	March 21 to April 11	18	12	
+B.1.28	USA (94%), Denmark (6%)	March 14 to April 09	17	14	
+B.1.25	Australia (100%)	March 19 to March 27	17	27	
+B.9	UK (59%), Australia (41%)	March 12 to April 15	17	8	
+B.1.27	USA (88%), Argentina (6%), UK (6%)	March 10 to April 04	17	19	
+B.1.5.3	UK (94%), Australia (6%)	March 18 to April 07	17	16	
+B.1.32	Sweden (100%)	March 04 to March 10	17	44	
+B.1.55	UK (100%)	March 26 to April 22	17	1	
+A.1.2	Canada (69%), USA (19%), Australia (12%)	March 07 to March 21	16	33	
+A.1.1	Iceland (100%)	March 11 to March 20	14	34	USA to Iceland (10)<br/>
+B.11	Netherlands (100%)	March 02 to March 24	14	30	
+B.1.40	UK (100%)	March 30 to April 23	14	0	
+B.1.38	USA (100%)	March 17 to April 08	12	15	
+B.1.5.2	Netherlands (100%)	March 24 to April 02	12	21	
+B.1.50	UK (73%), Portugal (27%)	March 17 to April 07	11	16	
+B.1.51	UK (100%)	April 01 to April 22	11	1	
+B.1.31	Australia (100%)	March 21 to March 27	10	27	
+B.1.5.5	UK (100%)	April 08 to April 23	10	0	
+B.1.48	UK (100%)	April 10 to April 23	10	0	
+B.1.46	Luxembourg (80%), UK (20%)	March 09 to April 17	10	6	
+B.1.5.4	Spain (56%), Mexico (11%), USA (11%)	March 11 to April 06	9	17	
+B.1.49	UK (100%)	March 27 to April 22	9	1	
+B.1.47	UK (100%)	March 26 to April 05	9	18	
+B.1.45	Australia (100%)	March 23 to March 26	6	28	
