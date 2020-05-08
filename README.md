@@ -51,8 +51,8 @@ Sometimes we have been able to examine lineages which we know are circulating in
 
 A couple of key bits of information about specific lineages that are not necessarily reflected by numbers and locations of sequences:
 
- - B.1 is a lineage that began in Italy, and has since seeded many different countries
- - B.4 is a lineage from Iran, but we do not have many sequences - we know this because many of our sequences are from travellers from Iran, so we have sampled them in the countries they arrived in.
+ - B.1 is a large lineage that roughly corresponds to the large outbreak in Italy, and has since seeded many different countries
+ - Many of the sequences in lineage B.4 are from travellers with a travel history from Iran, but have been sampled elsewhere.
 
 
 
