@@ -15,7 +15,7 @@ def parse_travel_history(lin_obj_dict, tax_dict, metadata):
         next(f)
         for l in f:
             toks = l.strip("\n").split(",")
-            travel = toks[3]
+            travel = toks[2]
             name = toks[0]
           
             if travel != "":
@@ -65,10 +65,10 @@ def make_objects(metadata_file):
             toks = l.strip("\n").split(",")
             
             tax_name = toks[0]
-            country = toks[2]
-            date = toks[4]
-            epiweek = toks[5]
-            lin_string = toks[6]
+            country = toks[1]
+            date = toks[3]
+            epiweek = toks[4]
+            lin_string = toks[5]
 
             metadata = [country, date, epiweek]
             
@@ -146,11 +146,6 @@ def make_dataframe(lin_obj_dict):
 
 
     dataframe["Known Travel"] = new_travels
-
-    dataframe.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
-
-    dataframe.set_index("Lineage name", inplace=True)
-
 
     return dataframe
 

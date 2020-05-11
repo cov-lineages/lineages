@@ -125,10 +125,19 @@ The "most common countries" column shows the three countries with the most seque
 Again, please interpret this with caution. Some countries are sequencing much more than others, and so locations of lineages may be at least partially due to this. It does not imply direction of transmission from one country to another. 
 Sometimes we have been able to examine lineages which we know are circulating in one country by looking at sequences from another country due to associated epidemiological information.
 
+A couple of key bits of information about specific lineages that are not necessarily reflected by numbers and locations of sequences:
+
+ - B.1 is a lineage that began in Italy, and has since seeded many different countries
+ - B.4 is a lineage from Iran, but we do not have many sequences - we know this because many of our sequences are from travellers from Iran, so we have sampled them in the countries they arrived in.
+
+
 ```python, echo=False, name="table", results='tex'
 
 df = parse.make_dataframe(lin_obj_dict)
-df.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
+
+df.sort_values(by=["Lineage name"], ascending=True, inplace=True)
+df.set_index("Lineage name", inplace=True)
+#df.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
 
 print(df.to_markdown())
 
