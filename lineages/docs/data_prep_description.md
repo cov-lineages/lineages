@@ -8,7 +8,12 @@ It also aligns the sequences using `mafft` and builds an ML tree using `iqtree`.
 
 ### Lineage Curation
 
-The phylogeny is annotated with lineage and then in `FigTree` the lineages are manually curated, drawing together a number of pieces of information including monophyly in the ML phylogeny (bootstrap > 70) and epidemiological data such as country and travel history. Any changes to lineage definitions and new lineages are documented during this process.
+The phylogeny is annotated with lineage and then in `FigTree` the lineages are manually curated, drawing together a number of pieces of information including monophyly in the ML phylogeny (generally a bootstrap > 70 is required) and epidemiological data such as country and travel history. Any changes to lineage definitions and new lineages are documented during this process.
+
+Occasionally, a bootstrap lower than 70 may be at the parent node of a lineage. This can be for one of a number of reasons.
+
+- The lineage may have been defined earlier in the outbreak and with added sequence data, there is less support for that lineage. In these cases the associated epidemiological metadata is examined and the lineage may be refined or even dropped entirely. The lineage number will not be 'recycled', but the members will get reassigned the parent lineage designation.
+- The lineage may have very clear epidemiological support and ambiguities or homoplasies in the sequences/ tree could contribute to low bootstrap values. In these cases, if the support is strong, the lineages are called. Recall rates for these lingeages within `pangolin` may be lower however.
 
 ### pangolin data preparation pipeline
 
