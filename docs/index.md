@@ -1,7 +1,7 @@
 # A dynamic lineage nomenclature for SARS-CoV-2 to assist genomic epidemiology**
 
-[descriptions.html](Descriptions and notes about each of the currently described lineages)
+[Descriptions and notes about each of the currently described lineages](descriptions)
 
-[data_prep_description.html](Details about the data preparation for lineage descriptions)
+[Details about the data preparation for lineage descriptions](data_prep_description)
 
 ## Summary of lineages 
