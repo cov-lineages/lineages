@@ -1,4 +1,4 @@
-# A dynamic lineage nomenclature for SARS-CoV-2 to assist genomic epidemiology**
+# A dynamic lineage nomenclature for SARS-CoV-2 to assist genomic epidemiology
 
 [Descriptions and notes about each of the currently described lineages](descriptions)
 
