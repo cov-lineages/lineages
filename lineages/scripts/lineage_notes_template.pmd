@@ -1,0 +1,39 @@
+# Lineage descriptions
+
+This document describes each lineage that was called during the manual curation of GISAID data and a 
+brief justification of why this lineage was called. Each week as more data is produced and analysed, new lineages may 
+be called and it may turn out that older lineages are in fact not lineages. This document will provide information about each
+lineage and clarify the decision making process. We take into account both phylogenetic and 
+epidemiological information and use all available evidence to informed lineage calls weekly.
+
+BS = bootstrap
+
+
+```python, echo=False, results='raw', name="Defining paths"
+
+input_file = "" ##CHANGE
+date_prep = input_file.split(".")[2]
+date = date_prep.split("_")[2]
+
+print("This document is correct as of " + date)
+
+```
+
+```python, echo=False, results='raw'
+
+info_dict = {}
+
+with open(input_file) as f:
+    next(f)
+    for l in f:
+        toks = l.strip("\n").split("\t")
+        info_dict[toks[0]] = toks[1]
+
+for key, value in info_dict.items():
+
+    print("### " + key + "\n")
+
+    print(value)
+
+    print("\n")
+```

@@ -1,25 +1,8 @@
+# A dynamic lineage nomenclature for SARS-CoV-2 to assist genomic epidemiology
 
+[Descriptions and notes about each of the currently described lineages](https://github.com/hCoV-2019/lineages/blob/master/docs/descriptions.md)
 
-
-
-
-
-**A dynamic nomenclature proposal for SARS-CoV-2 to assist genomic epidemiology**
-Andrew Rambaut, Edward C. Holmes, Verity Hill, Áine O’Toole, JT McCrone, Chris Ruis, Louis du Plessis, Oliver G. Pybus
-
-This is a companion repository to the paper describing a dynamic lineage nomenclature system for SARS-CoV-2.
-
-A pre-print of the paper can be found here: https://doi.org/10.1101/2020.04.17.046086
-
-This contains the following files:
-
-A table of acknowledgements for the GISAID genome sequences used to develop this paper:
-https://raw.githubusercontent.com/hCoV-2019/lineages/master/gisaid_acknowledgements.tsv
-
-<img src="https://github.com/hCoV-2019/pangolin/blob/master/docs/logo.png" width="100">**P**hylogenetic **A**ssignment of **N**amed **G**lobal **O**utbreak **LIN**eages
-
-Software to help assign your own SARS-CoV-2 genomes to these lineages is available:
-http://github.com/hCoV-2019/pangolin
+[Details about the data preparation for lineage descriptions](https://github.com/hCoV-2019/lineages/blob/master/docs/data_prep_description.md)
 
 ## Summary of lineages 
 
@@ -140,16 +123,3 @@ A couple of key bits of information about specific lineages that are not necessa
 | B.7            | Hong_Kong (97%), Canada (3%)                      | January 30 to March 04     |               31 |                         50 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | B.8            | UK (92%), Iceland (7%), Portugal (1%)             | March 01 to April 11       |              123 |                         12 | UK to Iceland (1)<br/> Austria to Iceland (1)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | B.9            | UK (59%), Australia (41%)                         | March 12 to April 15       |               17 |                          8 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-
-
-
-
-
-
-
-
-
-
-
-
-
