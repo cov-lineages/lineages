@@ -42,11 +42,14 @@ pmd_file.close()
 pweave.weave(pmd_string, doctype = "pandoc", figdir=fd)
 
 new_file = name_stem + ".md"
+index_file = "index.md"
 
 path_to_dir = os.path.dirname(__file__)
 source = os.path.join(path_to_dir, new_file)
 destination = os.path.join(path_to_dir, "../../", new_file)
+destination2 = os.path.join(path_to_dir, "../../docs", index_file)
 
-shutil.move(source, destination)  
+shutil.copyfile(source, destination)  
+shutil.move(source, destination2)
 
 os.remove(name_stem + ".pmd")
