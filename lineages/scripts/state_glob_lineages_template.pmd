@@ -149,7 +149,7 @@ lin_obj_dict = parse.get_recall_value(lin_obj_dict, recall_file)
 df = parse.make_dataframe(lin_obj_dict)
 
 df.sort_values(by=["Lineage name"], ascending=True, inplace=True)
-df.set_index("Lineage name", inplace=True)
+#df.set_index("Lineage name", inplace=True)
 #df.sort_values(by=["Number of taxa"], ascending=False, inplace=True)
 
 print(df.to_markdown())
@@ -182,7 +182,7 @@ with open(input_file) as f:
 
 for key, value in info_dict.items():
 
-    print("### " + key + "\n")
+    print("### " + key + "<a name=" + key +"></a>\n")
 
     print(value)
 

@@ -134,8 +134,6 @@ def make_dataframe(lin_obj_dict):
         dataframe_dict["Recall value"].append(i.recall_value)
 
     dataframe = pd.DataFrame(dataframe_dict)
-
-   
     
     new_countries_list = []
     for i in dataframe["Most common countries"]:
@@ -163,8 +161,18 @@ def make_dataframe(lin_obj_dict):
     
         new_travels.append(subset)
 
-
     dataframe["Known Travel"] = new_travels
+
+    dataframe.sort_values(by=["Lineage name"], ascending=True, inplace=True)
+
+    with_links = []
+    for i in dataframe["Lineage name"]:
+        name_plus_link = "[" + i + "]" + "(#" + i + ")"
+        with_links.append(name_plus_link)
+    dataframe["Lineage name"] = with_links
+
+    dataframe.set_index("Lineage name", inplace=True)
+
 
     return dataframe
 
