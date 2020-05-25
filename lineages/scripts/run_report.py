@@ -6,10 +6,14 @@ import shutil
 parser = argparse.ArgumentParser(description="Report generator script")
 
 parser.add_argument("--m", required=True, help="path to metadata file")
+parser.add_argument("--n", required=True, help="path to notes file")
+parser.add_argument("--r", required=True, help="path to recall info file")
 
 args=parser.parse_args()
 
 metadata_file = str(args.m)
+notes_file = str(args.n)
+recall_file = str(args.r)
 
 fd = "./figures"
 name_stem = "README"
@@ -22,6 +26,10 @@ with open("state_glob_lineages_template.pmd") as f:
         if "##CHANGE" in l:
             if "metadata" in l:
                 new_l = 'metadata = "' + metadata_file + '"\n' 
+            if "input_file" in l:
+                new_l = 'input_file = "' + notes_file + '"\n' 
+            if "recall_file" in l:
+                new_l = 'recall_file = "' + recall_file + '"\n' 
             
         else:
             new_l = l
@@ -35,10 +43,10 @@ pweave.weave(pmd_string, doctype = "pandoc", figdir=fd)
 
 new_file = name_stem + ".md"
 
-path_to_dir = os.path.dirname(__file__)
-source = os.path.join(path_to_dir, new_file)
-destination = os.path.join(path_to_dir, "../../", new_file)
+#path_to_dir = os.path.dirname(__file__)
+#source = os.path.join(path_to_dir, new_file)
+#destination = os.path.join(path_to_dir, "../../", new_file)
 
-shutil.move(source, destination)  
+#shutil.move(source, destination)  
 
-os.remove(name_stem + ".pmd")
+#os.remove(name_stem + ".pmd")

@@ -38,7 +38,7 @@ class taxon():
 
 class lineage():
     
-    def __init__(self, name, taxa, current_day, current_week):
+    def __init__(self, name, taxa, current_day):
         
         self.id = name
         
@@ -60,7 +60,7 @@ class lineage():
         
         self.get_date_loc_info(current_day)
         self.get_most_common_country()
-        self.define_status(current_week)
+        self.define_status(current_day)
 
         self.travel_history = defaultdict(set)
         
@@ -111,43 +111,25 @@ class lineage():
             self.mains_plus_freqs.append((i + " " + pretty_freq))
 
 
-    def define_status(self, current_week): 
+    def define_status(self, current_date): 
 
-        last_week = current_week - 1
-        two_weeks_ago = current_week - 2
-        last_two_weeks = [current_week-1, current_week-2]
-        last_month = [current_week-1, current_week-2, current_week-3, current_week-4]
-
-
-        int_list = []
-        for k,v in self.epiweek_counts.items():
-            if k in last_month:
-                int_list.append(v)
-        
-        if self.epiweek_counts[current_week] != 0:
-            if self.epiweek_counts[last_week] == 0:
-                self.status = "Reactivated"
-                self.newly_active = True
-
-                count_list = list(self.epiweek_counts.values())
-
-                self.latency_time = next((i for i, x in enumerate(count_list[1:]) if x), None) #in weeks
+        if self.last_sampled < 7:
+            for tax in self.taxa:
+                date_diff = (current_date - tax.date_dt).days
+                if date_diff > 7 and date_diff < 14:
+                    self.status = "Continuing"
+                    break
+                else:
+                    self.status = "Reactivated"
             
-            else:
-                self.status = "Continuing"
-                self.always_active = True          
+        elif self.last_sampled >= 7 and self.last_sampled < 14:
+            self.status = "Gone quiet" 
+        elif self.last_sampled >= 14 and self.last_sampled < 28:
+            self.status = "Pending extinction"
+        elif self.last_sampled >=28:
+            self.status="Extinct"
 
-        else:
-            if (self.epiweek_counts[last_week] == 0 and self.epiweek_counts[two_weeks_ago] != 0) or self.epiweek_counts[last_week] != 0: #not this week or last week, but week before
-                self.status = "Gone quiet"
-                self.quiet = True
-            elif all([v==0 for v in int_list]):
-                self.status = "Extinct"
-                self.extinct = True
-            else:
-                self.status = "Pending extinction"
-                self.pending = True
-
-    
         if not self.status:
             print("failed to assign status to " + self.name) 
+
+        

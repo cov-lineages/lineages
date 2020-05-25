@@ -15,8 +15,8 @@ def parse_travel_history(lin_obj_dict, tax_dict, metadata):
         next(f)
         for l in f:
             toks = l.strip("\n").split(",")
-            travel = toks[2]
-            name = toks[0]
+            travel = toks[3]
+            name = toks[1]
           
             if travel != "":
 
@@ -64,11 +64,11 @@ def make_objects(metadata_file):
            
             toks = l.strip("\n").split(",")
             
-            tax_name = toks[0]
-            country = toks[1]
-            date = toks[3]
-            epiweek = toks[4]
-            lin_string = toks[5]
+            tax_name = toks[1]
+            country = toks[2]
+            date = toks[4]
+            epiweek = toks[5]
+            lin_string = toks[6]
 
             metadata = [country, date, epiweek]
             
@@ -83,10 +83,10 @@ def make_objects(metadata_file):
 
 
     current_date = sorted(tax_with_dates, key=sortkey2, reverse = True)[0].date_dt
-    current_week = Week.fromdate(current_date)
+    #current_week = Week.fromdate(current_date)
     
     for lin, lin_specific_taxa in lineages_to_taxa.items():
-        l_o = classes.lineage(lin, lin_specific_taxa, current_date, current_week)
+        l_o = classes.lineage(lin, lin_specific_taxa, current_date)
 
         lin_obj_dict[lin] = l_o
 
@@ -94,6 +94,24 @@ def make_objects(metadata_file):
     lin_obj_dict = parse_travel_history(lin_obj_dict, tax_dict, metadata_file)
 
     return lin_obj_dict, taxa, current_date
+
+def get_recall_value(lin_obj_dict, recall_file):
+
+    recall_dict = {}
+
+    with open(recall_file) as f:
+        next(f)
+        for l in f:
+            toks = l.strip("\n").split(",")
+            name = toks[0]
+            recall_value = toks[4]
+
+            recall_dict[name] = recall_value
+
+    for key, value in lin_obj_dict.items():
+        value.recall_value = recall_dict[key]
+
+    return lin_obj_dict
 
 
 def sort_key(lin):
@@ -113,6 +131,7 @@ def make_dataframe(lin_obj_dict):
         dataframe_dict["Number of taxa"].append(len(i.taxa))
         dataframe_dict["Days since last sampling"].append(i.last_sampled)
         dataframe_dict["Known Travel"].append(i.travel_history)
+        dataframe_dict["Recall value"].append(i.recall_value)
 
     dataframe = pd.DataFrame(dataframe_dict)
 

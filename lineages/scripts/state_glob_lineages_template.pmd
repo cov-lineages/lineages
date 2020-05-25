@@ -8,6 +8,8 @@ name_stem="state_global_lineages"
 
 metadata = "" ##CHANGE
 
+recall_file = "" ##CHANGE
+
 fd = "figures/"
 
 ```
@@ -43,7 +45,7 @@ except FileExistsError:
 
 ```
 
-**A dynamic nomenclature proposal for SARS-CoV-2 to assist genomic epidemiology**
+# **A dynamic nomenclature proposal for SARS-CoV-2 to assist genomic epidemiology**
 Andrew Rambaut, Edward C. Holmes, Verity Hill, Áine O’Toole, JT McCrone, Chris Ruis, Louis du Plessis, Oliver G. Pybus
 
 This is a companion repository to the paper describing a dynamic lineage nomenclature system for SARS-CoV-2.
@@ -60,7 +62,22 @@ https://raw.githubusercontent.com/hCoV-2019/lineages/master/gisaid_acknowledgeme
 Software to help assign your own SARS-CoV-2 genomes to these lineages is available:
 http://github.com/hCoV-2019/pangolin
 
-## Summary of lineages 
+### Updates in data release 2020-05-19:
+
+This weeks data release has some substantial changes. 
+
+- We've implemented a system of "putative" lineages. Any lineages that have a recall value of < 95% are given `p` flag. E.g. `B.1.16` becomes `B.1.p16`. 
+
+- A large lineage within B.1 with `28881GA`,`28882GA`,`28883GC` defining SNPs has been called as B.1.1. Any lineages that existed within this that would have previously been called B.1.X have been renamed as B.1.1.X, with the count restarted. Details on which lineages have been renamed can be found in the lineage descriptions.
+
+## Lineage summary
+
+
+[Additional notes](#descriptions) on justification and descriptions are available after the following table, and can also be accessed by clicking on the lineage name in the table.
+
+Each week as more data is produced and analysed, new lineages may be called and it may turn out that older lineages are in fact not lineages. We take into account both phylogenetic and 
+epidemiological information and use all available evidence to informed lineage calls weekly.
+
 
 ```python, name='prepping things and prelim info',echo=False, results='tex'
 
@@ -116,7 +133,7 @@ if continuous > 0:
         print(str(continuous) + " lineages have been continuously circulating.")
 ```
 
-Note that the status of a lineage is highly likely to be due to heterogeneity in sampling, and not necessarily indicative of real decline of lineages.
+Note that the status of a lineage is highly likely to be due to heterogeneity in sampling, and not necessarily indicative of the real decline of lineages.
 
 The table below shows summary information of each lineage. 
 
@@ -125,13 +142,9 @@ The "most common countries" column shows the three countries with the most seque
 Again, please interpret this with caution. Some countries are sequencing much more than others, and so locations of lineages may be at least partially due to this. It does not imply direction of transmission from one country to another. 
 Sometimes we have been able to examine lineages which we know are circulating in one country by looking at sequences from another country due to associated epidemiological information.
 
-A couple of key bits of information about specific lineages that are not necessarily reflected by numbers and locations of sequences:
-
- - B.1 is a lineage that began in Italy, and has since seeded many different countries
- - B.4 is a lineage from Iran, but we do not have many sequences - we know this because many of our sequences are from travellers from Iran, so we have sampled them in the countries they arrived in.
-
 
 ```python, echo=False, name="table", results='tex'
+lin_obj_dict = parse.get_recall_value(lin_obj_dict, recall_file)
 
 df = parse.make_dataframe(lin_obj_dict)
 
@@ -143,6 +156,37 @@ print(df.to_markdown())
 
 df.to_csv("summary_files/lineage_summary.tsv", sep="\t")
 
+```
+## Lineage descriptions <a name="descriptions"></a>
+
+
+BS = bootstrap
+
+```python, echo=False, results='raw', name="Defining paths"
+
+input_file = "" ##CHANGE
+date_prep = input_file.split(".")[2]
+date = date_prep.split("_")[2]
+
+```
+
+```python, echo=False, results='raw'
+
+info_dict = {}
+
+with open(input_file) as f:
+    next(f)
+    for l in f:
+        toks = l.strip("\n").split("\t")
+        info_dict[toks[0]] = toks[1]
+
+for key, value in info_dict.items():
+
+    print("### " + key + "\n")
+
+    print(value)
+
+    print("\n")
 ```
 
 
