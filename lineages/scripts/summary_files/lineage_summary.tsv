@@ -1,5 +1,5 @@
 Lineage name	Most common countries	Date range	Number of taxa	Days since last sampling	Known Travel	Recall value
-A	China (57%), South_Korea (9%), USA (8%)	January 05 to April 23	223	17	China to Belgium, India, Australia, Taiwan, Vietnam (6)<br/> USA to New_Zealand (1)<br/> Saudia_Arabia to Turkey (1)<br/>	87.76
+A	China (57%), South_Korea (9%), USA (8%)	January 05 to April 23	223	17	China to Belgium, Taiwan, India, Australia, Vietnam (6)<br/> USA to New_Zealand (1)<br/> Saudia_Arabia to Turkey (1)<br/>	87.76
 A.1	USA (87%), Australia (7%), Canada (4%)	February 22 to April 30	1116	10	USA to Iceland (1)<br/>	100.0
 A.1.1	Iceland (100%)	March 11 to March 20	14	51	USA to Iceland (10)<br/>	100.0
 A.1.3	Australia (90%), Taiwan (10%)	March 19 to April 02	10	38		100.0
@@ -9,9 +9,9 @@ A.4	USA (100%)	March 13 to April 10	25	30		100.0
 A.5	Spain (39%), UK (35%), Uruguay (6%)	February 23 to April 26	118	14		95.93
 A.6	Thailand (100%)	January 23 to March 28	31	43		100.0
 A.p7	Saudi_Arabia (70%), USA (7%), Russia (7%)	March 06 to April 27	27	13	Saudia_Arabia to Turkey (1)<br/>	100.0
-B	UK (43%), USA (16%), China (13%)	December 24 to May 03	1713	7	China to India, Taiwan, Cambodia, Singapore, Canada, Thailand, France, Italy (9)<br/> Italy to Finland, Iceland (2)<br/> UK to Iceland (4)<br/> Netherlands to Ecuador, Iceland (2)<br/> Austria to Iceland (1)<br/> USA to China, Kuwait, Iceland (3)<br/> Switzerland to Iceland (1)<br/> Japan to Taiwan (1)<br/> Saudia_Arabia to Turkey (1)<br/>	97.99
-B.1	UK (41%), USA (26%), Australia (5%)	January 24 to May 08	7438	2	Egypt;United_Arab_Emirates to Taiwan (1)<br/> UK to Iceland (16)<br/> Iran to Finland, Turkey (2)<br/> Netherlands to Iceland (3)<br/> Spain to Argentina, Iceland (6)<br/> Germany to Iceland (2)<br/> Switzerland to Iceland (2)<br/> Austria to Taiwan, Iceland (43)<br/> USA to Costa_Rica, Taiwan, Iceland (3)<br/> Italy to Finland, Czech_Republic, Brazil, Iceland (16)<br/> Croatia to Iceland (1)<br/> France to Turkey, Taiwan, Iceland (5)<br/> Egypt to Taiwan (2)<br/> USA;Czech_Republic to Taiwan (1)<br/> Czech_Republic to Taiwan (1)<br/> Poland to Taiwan (1)<br/> Israel to Argentina (1)<br/> Brazil to Argentina (1)<br/> Saudia_Arabia to Turkey (1)<br/>	98.47
-B.1.1	UK (79%), Australia (2%), USA (2%)	February 15 to May 09	6286	1	Italy to New_Zealand, Nigeria, Thailand, Iceland, Mexico, Chile, Brazil (36)<br/> Finland to Iceland (1)<br/> UK to Kuwait, Iceland (5)<br/> Germany to Iceland (1)<br/> USA to Brazil (1)<br/> Spain to Taiwan, Iceland (3)<br/> Germany;Austria;Spain;Italy to Brazil (1)<br/> Austria to Iceland (4)<br/> Switzerland to Iceland (1)<br/> Mexico to Argentina (1)<br/> France to Argentina (1)<br/>	99.86
+B	UK (43%), USA (16%), China (13%)	December 24 to May 03	1713	7	China to Italy, Singapore, Taiwan, India, France, Cambodia, Thailand, Canada (9)<br/> Italy to Finland, Iceland (2)<br/> UK to Iceland (4)<br/> Netherlands to Ecuador, Iceland (2)<br/> Austria to Iceland (1)<br/> USA to Kuwait, China, Iceland (3)<br/> Switzerland to Iceland (1)<br/> Japan to Taiwan (1)<br/> Saudia_Arabia to Turkey (1)<br/>	97.99
+B.1	UK (41%), USA (26%), Australia (5%)	January 24 to May 08	7438	2	Egypt;United_Arab_Emirates to Taiwan (1)<br/> UK to Iceland (16)<br/> Iran to Finland, Turkey (2)<br/> Netherlands to Iceland (3)<br/> Spain to Argentina, Iceland (6)<br/> Germany to Iceland (2)<br/> Switzerland to Iceland (2)<br/> Austria to Iceland, Taiwan (43)<br/> USA to Costa_Rica, Iceland, Taiwan (3)<br/> Italy to Czech_Republic, Finland, Brazil, Iceland (16)<br/> Croatia to Iceland (1)<br/> France to Turkey, Iceland, Taiwan (5)<br/> Egypt to Taiwan (2)<br/> USA;Czech_Republic to Taiwan (1)<br/> Czech_Republic to Taiwan (1)<br/> Poland to Taiwan (1)<br/> Israel to Argentina (1)<br/> Brazil to Argentina (1)<br/> Saudia_Arabia to Turkey (1)<br/>	98.47
+B.1.1	UK (79%), Australia (2%), USA (2%)	February 15 to May 09	6286	1	Italy to Brazil, Chile, Iceland, New_Zealand, Thailand, Nigeria, Mexico (36)<br/> Finland to Iceland (1)<br/> UK to Kuwait, Iceland (5)<br/> Germany to Iceland (1)<br/> USA to Brazil (1)<br/> Spain to Iceland, Taiwan (3)<br/> Germany;Austria;Spain;Italy to Brazil (1)<br/> Austria to Iceland (4)<br/> Switzerland to Iceland (1)<br/> Mexico to Argentina (1)<br/> France to Argentina (1)<br/>	99.86
 B.1.1.1	UK (93%), DRC (1%), Iceland (1%)	March 02 to May 08	952	2	Austria to Iceland (5)<br/> UK to Argentina, Iceland (3)<br/> Peru;Argentina to Costa_Rica (1)<br/>	100.0
 B.1.1.10	UK (92%), Iceland (3%), Australia (2%)	March 06 to May 01	171	9	UK to Iceland (1)<br/> USA to Iceland (1)<br/> Saudia_Arabia to Turkey (1)<br/>	99.42
 B.1.1.13	UK (100%)	March 28 to April 15	16	25		100.0
@@ -90,7 +90,7 @@ B.2.5	UK (86%), Australia (10%), Slovenia (1%)	February 27 to April 27	143	13		9
 B.2.6	UK (77%), Australia (9%), Iceland (6%)	March 05 to May 04	47	6		97.92
 B.2.7	Iceland (100%)	March 12 to March 29	46	42		97.87
 B.3	UK (84%), Germany (3%), Denmark (3%)	February 23 to April 23	752	17	UK to Brazil, Iceland (2)<br/> Austria to Iceland (1)<br/>	100.0
-B.4	Australia (35%), UK (18%), Turkey (8%)	January 18 to April 14	258	26	Iran to New_Zealand, Kuwait, Australia, Canada, Pakistan, Turkey, Germany (12)<br/> Turkey to Taiwan (1)<br/>	99.61
+B.4	Australia (35%), UK (18%), Turkey (8%)	January 18 to April 14	258	26	Iran to Pakistan, Germany, New_Zealand, Kuwait, Canada, Australia, Turkey (12)<br/> Turkey to Taiwan (1)<br/>	99.61
 B.5	Japan (94%), Australia (6%)	February 10 to February 24	18	76		100.0
 B.6	India (36%), Singapore (27%), Australia (19%)	March 04 to April 30	221	10	Philippines to Taiwan (1)<br/>	100.0
 B.7	Hong_Kong (97%), Canada (3%)	January 30 to March 04	37	67		100.0
