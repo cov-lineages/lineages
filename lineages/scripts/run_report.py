@@ -43,10 +43,10 @@ pweave.weave(pmd_string, doctype = "pandoc", figdir=fd)
 
 new_file = name_stem + ".md"
 
-# path_to_dir = os.path.dirname(__file__)
-# source = os.path.join(path_to_dir, new_file)
-# destination = os.path.join(path_to_dir, "../../", new_file)
+path_to_dir = os.path.dirname(__file__)
+source = os.path.join(path_to_dir, new_file)
+destination = os.path.join(path_to_dir, "../../", new_file)
 
-# shutil.move(source, destination)  
+shutil.move(source, destination)  
 
-# os.remove(name_stem + ".pmd")
+os.remove(name_stem + ".pmd")
