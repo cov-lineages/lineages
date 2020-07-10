@@ -1,9 +1,0 @@
-{
-    "path" : "~/COVID_lineages",
-    "sortOrder" : [
-        {
-            "ascending" : true,
-            "columnIndex" : 2
-        }
-    ]
-}
