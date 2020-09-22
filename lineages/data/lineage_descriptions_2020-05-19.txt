@@ -1,4 +1,4 @@
-Lineage Notes
+Lineage	Notes
 A	Root of the pandemic lies within lineage A. Many sequences originating from China and many global exports; including to South East Asia, Japan, South Korea, Australia, the USA and Europe, represented in this lineage
 A.1	A North American lineage, with some sequences from Australia in (BS=95)
 A.1.1	Iceland lineage (BS:100->79)
