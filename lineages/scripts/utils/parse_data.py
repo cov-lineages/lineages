@@ -4,6 +4,7 @@ from collections import Counter
 import imp
 import pandas as pd
 from epiweeks import Week,Year
+import datetime as dt
 
 classes = imp.load_source("class_defs", 'utils/class_defs.py')
 time = imp.load_source("time_functions", "utils/time_functions.py")
@@ -48,7 +49,6 @@ def sortkey2(taxon):
 
 def make_objects(metadata_file):
 
-   
     #epiweeks = time.make_epiweeks()
 
     lineage_objects = []
@@ -82,8 +82,9 @@ def make_objects(metadata_file):
             lineages_to_taxa[lin_string].append(new_taxon)
 
 
-    current_date = sorted(tax_with_dates, key=sortkey2, reverse = True)[0].date_dt
+    # current_date = sorted(tax_with_dates, key=sortkey2, reverse = True)[0].date_dt
     #current_week = Week.fromdate(current_date)
+    current_date = dt.date.today()
     
     for lin, lin_specific_taxa in lineages_to_taxa.items():
         l_o = classes.lineage(lin, lin_specific_taxa, current_date)
