@@ -130,7 +130,7 @@ def make_dataframe(lin_obj_dict):
         dataframe_dict["Most common countries"].append(i.mains_plus_freqs)
         dataframe_dict["Date range"].append(i.pretty_oldest + " to " + i.pretty_mrd)
         dataframe_dict["Number of taxa"].append(len(i.taxa))
-        dataframe_dict["Days since last sampling"].append(i.last_sampled)
+        #dataframe_dict["Days since last sampling"].append(i.last_sampled)
         dataframe_dict["Known Travel"].append(i.travel_history)
         dataframe_dict["Recall value"].append(i.recall_value)
 
